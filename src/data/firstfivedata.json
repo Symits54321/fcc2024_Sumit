@@ -1,0 +1,226 @@
+[
+    {
+        "name": "Research",
+        "bgcolor": "#2a4494",
+        "textColor": "white",
+        "hover": {
+            "positive": 10,
+            "negative": 5,
+            "comments": 3
+        },
+        "children": [
+            {
+                "name": "External",
+                "bgcolor": "#2a4494",
+                "textColor": "white",
+                "hover": {
+                    "positive": 10,
+                    "negative": 5,
+                    "comments": 3
+                },
+                "children": [
+                    {
+                        "name": "B2C",
+                        "bgcolor": "#2a4494",
+                        "textColor": "white",
+                        "hover": {
+                            "positive": 10,
+                            "negative": 5,
+                            "comments": 3
+                        },
+                        "children": [
+                            {
+                                "name": "Online",
+                                "bgcolor": "#2a4494",
+                                "textColor": "white",
+                                "hover": {
+                                    "positive": 10,
+                                    "negative": 5,
+                                    "comments": 3
+                                }
+                            },
+                            {
+                                "name": "Interview",
+                                "bgcolor": "#2a4494",
+                                "textColor": "white",
+                                "hover": {
+                                    "positive": 10,
+                                    "negative": 5,
+                                    "comments": 3
+                                }
+                            },
+                            {
+                                "name": "Public Data",
+                                "bgcolor": "#2a4494",
+                                "textColor": "white",
+                                "hover": {
+                                    "positive": 10,
+                                    "negative": 5,
+                                    "comments": 3
+                                }
+                            },
+                            {
+                                "name": "Health",
+                                "bgcolor": "#2a4494",
+                                "textColor": "white",
+                                "hover": {
+                                    "positive": 10,
+                                    "negative": 5,
+                                    "comments": 3
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "name": "B2B",
+                        "bgcolor": "#2a4494",
+                        "textColor": "white",
+                        "hover": {
+                            "positive": 10,
+                            "negative": 5,
+                            "comments": 3
+                        }
+                    }
+                ]
+            },
+            {
+                "name": "Internal",
+                "bgcolor": "#2a4494",
+                "textColor": "white",
+                "hover": {
+                    "positive": 10,
+                    "negative": 5,
+                    "comments": 3
+                }
+            }
+        ]
+    },
+    {
+        "name": "Planning",
+        "bgcolor": "#82b3e8",
+        "textColor": "black",
+        "hover": {
+            "positive": 7,
+            "negative": 2,
+            "comments": 6
+        },
+        "children": [
+            {
+                "name": "PRD",
+                "bgcolor": "#82b3e8",
+                "textColor": "black",
+                "hover": {
+                    "positive": 7,
+                    "negative": 2,
+                    "comments": 6
+                }
+            },
+            {
+                "name": "Specs",
+                "bgcolor": "#82b3e8",
+                "textColor": "black",
+                "hover": {
+                    "positive": 7,
+                    "negative": 2,
+                    "comments": 6
+                }
+            }
+        ]
+    },
+    {
+        "name": "Designing",
+        "bgcolor": "#e96343",
+        "textColor": "black",
+        "hover": {
+            "positive": 12,
+            "negative": 8,
+            "comments": 4
+        },
+        "children": [
+            {
+                "name": "Hardware",
+                "bgcolor": "#e96343",
+                "textColor": "black",
+                "hover": {
+                    "positive": 12,
+                    "negative": 8,
+                    "comments": 4
+                }
+            },
+            {
+                "name": "Software",
+                "bgcolor": "#e96343",
+                "textColor": "black",
+                "hover": {
+                    "positive": 12,
+                    "negative": 8,
+                    "comments": 4
+                }
+            }
+        ]
+    },
+    {
+        "name": "Manufacturing",
+        "bgcolor": "#e8919d",
+        "textColor": "black",
+        "hover": {
+            "positive": 8,
+            "negative": 6,
+            "comments": 5
+        },
+        "children": [
+            {
+                "name": "Material",
+                "bgcolor": "#e8919d",
+                "textColor": "black",
+                "hover": {
+                    "positive": 8,
+                    "negative": 6,
+                    "comments": 5
+                }
+            },
+            {
+                "name": "Production",
+                "bgcolor": "#e8919d",
+                "textColor": "black",
+                "hover": {
+                    "positive": 8,
+                    "negative": 6,
+                    "comments": 5
+                }
+            }
+        ]
+    },
+    {
+        "name": "Sales/Marketing",
+        "bgcolor": "#a684eb",
+        "textColor": "black",
+        "hover": {
+            "positive": 15,
+            "negative": 4,
+            "comments": 7
+        },
+        "children": [
+            {
+                "name": "Online",
+                "bgcolor": "#a684eb",
+                "textColor": "black",
+                "hover": {
+                    "positive": 15,
+                    "negative": 4,
+                    "comments": 7
+                }
+            },
+            {
+                "name": "Dealership",
+                "bgcolor": "#a684eb",
+                "textColor": "black",
+                "hover": {
+                    "positive": 15,
+                    "negative": 4,
+                    "comments": 7
+                }
+            }
+        ]
+    }
+]
