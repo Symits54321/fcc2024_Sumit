@@ -1,70 +1,112 @@
-# Getting Started with Create React App
+# Lizmotors Internship Assignment by Sumit Singh
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Welcome to my Lizmotors Internship Assignment 2024 FrontEnd-Coding Challenge completed using React, a JavaScript framework.
 
-## Available Scripts
+## Screenshot
 
-In the project directory, you can run:
+![Project Screenshot](screenshot/capture1.png)
 
-### `npm start`
+## Hoisted Link
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+[Click here to view the project](https://fcc2024-sumit-lizmotors.vercel.app/)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Pages Used
 
-### `npm test`
+Only the `homepage.js` page is utilized and later imported into the app. In the homepage, several components are used.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Components Used
 
-### `npm run build`
+- **canvascomp**: Contains JavaScript files responsible for building the arrow using canvas.
+- **columncomp**: Houses all JavaScript files related to each column. The button views are divided into four columns because different components have different arrow styles, and this design can only be built one column at a time.
+- **splittercomp**: Includes all files related to joining the splitter with buttons.
+- **hovercomp**: Deals exclusively with the hover design and its associated components.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Data Management
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+All data about button names and connections are managed using parent-child relationships in objects. Here's an example of how the objects are structured:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```javascript
+// Sample data structure
+........
+      ]
+    },
+    {
+        "id": 10010,
+        "name": "Planning",
+        "bgcolor": "#82b3e8",
+        "textColor": "black",
+        "hover": {
+            "positive": 12000,
+            "negative": 8000,
+            "comments": 10000
+        },
+        "children": [
+            {
+                "id": 10011,
+                "name": "PRD",
+                "bgcolor": "#82b3e8",
+                "textColor": "black",
+                "hover": {
+                    "positive": 8000,
+                    "negative": 4000,
+                    "comments": 6000
+                }
+            },
+            {
+                "id": 10012,
+                "name": "Specs",
+                "bgcolor": "#82b3e8",
+                "textColor": "black",
+                "hover": {
+                    "positive": 4000,
+                    "negative": 2000,
+                    "comments": 3000
+                }
+            }
+        ]
+    },
+    {
+        "id": 10013,
+        "name": "Designing",
+        "bgcolor": "#e96343",
+        "textColor": "black",
+        "hover": {
+            "positive": 15000,
+            "negative": 10000,
+            "comments": 12000
+        },
+        "children": [
+            {
+                "id": 10014,
+                "name": "Hardware",
+                "bgcolor": "#e96343",
+                "textColor": "black",
+                "hover": {
+                    "positive": 7000,
+                    "negative": 4000,
+                    "comments": 5000
+                }
+            },
+            {
+                "id": 10015,
+                "name": "Software",
+                "bgcolor": "#e96343",
+                "textColor": "black",
+                "hover": {
+                    "positive": 8000,
+                    "negative": 6000,
+                    "comments": 7000
+                }
+            }
+        ]
+```
 
-### `npm run eject`
+## Functionality
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Hovering over each button provides information about positive reviews, negative reviews, and comments displayed in a bar graph. This interactive feature enhances user experience by providing insights in real-time.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Readme.md
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+This README provides an overview of the project, including its structure, components used, data management approach, and functionality. For running the project locally, ensure you have the necessary dependencies installed and follow the instructions in the project repository.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Feel free to explore the codebase and provide feedback or suggestions for improvement. Thank you for checking out my Lizmotors Internship Assignment!
