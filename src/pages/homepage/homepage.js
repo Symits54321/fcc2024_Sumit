@@ -15,6 +15,7 @@ function Homepage() {
     return(
         <>
         {/* //heading */}
+        <h2 style={{color:'#00acc1'}}>Lizmotors Internship Assignment by Sumit Singh</h2>
         <h3>Show the details on hover</h3>
         {/* //  mindmap container  */}
         <div className={style.mindmapContainer}>
