@@ -4,7 +4,7 @@ Welcome to my Lizmotors Internship Assignment 2024 FrontEnd-Coding Challenge com
 
 ## Screenshot
 
-![Project Screenshot](screenshot/capture1.png)
+![Project Screenshot](screenshot/Capture1.JPG)
 
 ## Hoisted Link
 
