@@ -105,8 +105,4 @@ All data about button names and connections are managed using parent-child relat
 
 Hovering over each button provides information about positive reviews, negative reviews, and comments displayed in a bar graph. This interactive feature enhances user experience by providing insights in real-time.
 
-## Readme.md
 
-This README provides an overview of the project, including its structure, components used, data management approach, and functionality. For running the project locally, ensure you have the necessary dependencies installed and follow the instructions in the project repository.
-
-Feel free to explore the codebase and provide feedback or suggestions for improvement. Thank you for checking out my Lizmotors Internship Assignment!
