@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 
-const SplittingCanvas = ({ totalHeight, totalWidth, splitNumber , cl }) => {
+const SplittingCanvas = ({ totalHeight, totalWidth, splitNumber , cl , rotate , top}) => {
   useEffect(() => {
     // Get the canvas element
     const canvas = document.getElementById("myCanvas"+cl);
@@ -26,11 +26,12 @@ const SplittingCanvas = ({ totalHeight, totalWidth, splitNumber , cl }) => {
     ctx.strokeStyle = "black"; // Stroke color
     ctx.lineWidth = 2; // Line width
     ctx.stroke(); // Draw the line
-  }, [totalHeight, totalWidth, splitNumber]);
+  }, [totalHeight, totalWidth, splitNumber , rotate ,top]);
 
   return (
   
-      <canvas id={"myCanvas"+cl} width={totalWidth} height={totalHeight}></canvas>
+      <canvas id={"myCanvas"+cl} style={{rotate:rotate, position:'relative', bottom:top}}
+      width={totalWidth} height={totalHeight}></canvas>
      
     
   );

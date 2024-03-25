@@ -1,4 +1,6 @@
 import {ArrowComponent} from "../canvascomp/drawingComponent";
+import Hovercomp from "../hovercomp/Hovercomp";
+import { useState } from "react";
 
 
 
@@ -15,6 +17,34 @@ function DualSplitter({height,width,data,vaclength,cl}){
         }
         return result;
       };
+
+
+
+  const [hoverState,setHoverState] = useState(false);
+  const [hoverId,setHoverId] = useState("");
+
+  const handlemouseover = (id) => {
+
+   
+      setHoverId(id);
+      setHoverState(true);
+   
+
+  }
+
+  const handlemouseout = () => {
+
+   
+      setHoverState(false);
+      setHoverId("");
+   
+
+  }
+
+
+
+
+
       
      
     if(data!="vacant"){
@@ -33,9 +63,14 @@ function DualSplitter({height,width,data,vaclength,cl}){
                 }
                 
                 return(
-            <div key={index} style={{ display: "flex", justifyContent: "center", alignItems: "center" }}>
+            <div key={index} style={{ display: "flex", justifyContent: "center", alignItems: "center" , position: "relative" }}>
                 <ArrowComponent slant={true} dir={dirval} width={width} height={height} t={item.name} />
-                <button style={{ backgroundColor:item.bgcolor, color:item.textColor, height: '30px', width: '110px', border:"none" }}>{item.name}</button>
+                <button style={{ backgroundColor:item.bgcolor, color:item.textColor, height: '30px', width: '110px', border:"none" }}
+                 onMouseOver={()=> handlemouseover(item.id) }
+                 onMouseLeave={()=> handlemouseout() }>{item.name}</button>
+                 {hoverState && hoverId===item.id && <Hovercomp hoverdata={item.hover}/>}
+                
+                
             </div>
             
             )})}

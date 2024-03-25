@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 
-export const ArrowComponent = ({ slant, dir, width, height ,t}) => {
+export const ArrowComponent = ({ slant, dir, width, height ,t ,head}) => {
 
 
 
@@ -9,17 +9,21 @@ export const ArrowComponent = ({ slant, dir, width, height ,t}) => {
   useEffect(() => {
     const canvas = document.getElementById("myCanvas"+t);
     const ctx = canvas.getContext("2d");
-    drawArrow(ctx, slant, dir, width, height);
-  }, [slant, dir, width, height]);
+    drawArrow(ctx, slant, dir, width, height, head);
+  }, [slant, dir, width, height, head]);
 
   const drawArrow = (ctx, slant, dir, width, height ) => {
     const h = height;    // arrow box height or arrow gaps
     const w = width;   // arrow length
-    const d = 5;    // arrow size
+     let d = 4;    // arrow size
     let s = 0;
 
     if (slant) {
       s = w / 3;
+    }
+
+    if(head=="none"){
+      d=0;
     }
 
     ctx.clearRect(0, 0, width, height); // Clear the canvas before drawing

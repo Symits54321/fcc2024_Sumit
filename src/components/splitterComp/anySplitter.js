@@ -2,6 +2,9 @@ import React from 'react';
 import { ArrowComponent } from "../canvascomp/drawingComponent";
 import SplittingCanvas from "../canvascomp/splitComponent";
 
+import { useState } from 'react';
+import Hovercomp from '../hovercomp/Hovercomp';
+
 function Splitter({ height, width, data, vaclength, cl ,top}) {
 
   const generateRandomString = (length) => {
@@ -13,6 +16,28 @@ function Splitter({ height, width, data, vaclength, cl ,top}) {
     }
     return result;
   };
+
+  const [hoverState,setHoverState] = useState(false);
+  const [hoverId,setHoverId] = useState("");
+
+  const handlemouseover = (id) => {
+
+   
+      setHoverId(id);
+      setHoverState(true);
+   
+
+  }
+
+  const handlemouseout = () => {
+
+   
+      setHoverState(false);
+      setHoverId("");
+   
+
+  }
+
 
 
   const l = data.length;
@@ -32,9 +57,13 @@ function Splitter({ height, width, data, vaclength, cl ,top}) {
               
               console.log("Splitterdata:-" +item.name);
             return(
-                <div key={index} style={{ display: "flex", justifyContent: "center", alignItems: "center" }}>
+                <div key={index} style={{ display: "flex", justifyContent: "center", alignItems: "center", position:'relative' }}>
                 <ArrowComponent slant={false} dir="none" width={width-(width/3)} height={height} t={item.name+cl} />
-                <button style={{ backgroundColor: item.bgcolor, color: item.textColor, height: '30px', width: '110px', border: "none" }}>{item.name}</button>
+                <button style={{ backgroundColor: item.bgcolor, color: item.textColor, height: '30px', width: '110px', border: "none" }}
+                 onMouseOver={()=> handlemouseover(item.id) }
+                 onMouseLeave={()=> handlemouseout() }>{item.name}</button>
+                 {hoverState && hoverId===item.id && <Hovercomp hoverdata={item.hover}/>}
+               
               </div>
             );
       

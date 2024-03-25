@@ -3,10 +3,15 @@
     flex-direction: row;
     padding: 20px;
     margin-top: 200px;
+    
 
 }
 
 .mindmapContainer>div {
     display:flex;
     flex-direction: column;
+}
+
+button{
+    border-radius: 4px;
 }

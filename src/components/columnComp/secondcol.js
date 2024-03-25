@@ -1,5 +1,5 @@
 
-import DualSplitter from "./mini/dualSplitter";
+import DualSplitter from "../splitterComp/dualSplitter";
 
 
 

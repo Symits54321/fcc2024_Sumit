@@ -1,5 +1,5 @@
 
-import Splitter from "./mini/anySplitter";
+import Splitter from "../splitterComp/anySplitter";
 
 
 
